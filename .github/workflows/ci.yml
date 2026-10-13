@@ -1,0 +1,42 @@
+name: Build and test (iOS)
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Show Xcode version
+        run: xcodebuild -version
+      - name: Install XcodeGen
+        run: brew install xcodegen
+      - name: Generate project
+        run: xcodegen generate
+      - name: Commit generated Xcode project (main branch only)
+        if: github.event_name == 'push'
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add -f SwaraCoach.xcodeproj 
+          git diff --cached --quiet || (git commit -m "chore: regenerate Xcode project [skip ci]" && git push)
+      - name: Build for iOS Simulator
+        run: |
+          set -o pipefail
+          xcodebuild build -project SwaraCoach.xcodeproj -scheme SwaraCoach \
+            -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO | tee build.log | tail -n 60
+      - name: Run unit and UI tests
+        run: |
+          set -o pipefail
+          DEST=$(xcrun simctl list devices available | grep -m1 -o 'iPhone [^(]*' | sed 's/ *$//' || true)
+          echo "Using simulator: $DEST"
+          xcodebuild test -project SwaraCoach.xcodeproj -scheme SwaraCoach \
+            -destination "platform=iOS Simulator,name=${DEST:-iPhone 16}" CODE_SIGNING_ALLOWED=NO | tail -n 80
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: build-log
+          path: build.log
