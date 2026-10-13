@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03652514B8F4BAB8D6CCEF29 /* SingSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ACAAB617ADE78567515D06 /* SingSessionView.swift */; };
+		07317174B9672EA56A41094A /* SimulatedInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FF1299C5C5357A6A0840F9 /* SimulatedInput.swift */; };
+		0BF993136EE8366210C9F542 /* TunerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840696CB8F380446C62D149D /* TunerViewModel.swift */; };
+		0F65047FC340FEFEABDC4449 /* AudioInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1805B057590D6CC31E1706 /* AudioInput.swift */; };
+		141140AD6D49EFA3054A6E8F /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAAE53A633A156CAB9651E4 /* StarRatingView.swift */; };
+		1F605249976BCE0E3B3106E3 /* GlowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA7F09A4DE9EE75BFE1B97 /* GlowCard.swift */; };
+		202AB27C4DA9AC008375D220 /* SwaraCoachApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E891E3EB24D3F652A50E1F /* SwaraCoachApp.swift */; };
+		221252D40A629AC590B8AA7D /* SessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749E2D5AE42386BEFFA0E65C /* SessionViewModel.swift */; };
+		263286EFBCD5C9A1A4A3DE7D /* PitchSmoother.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1D3B028FD8148E87DEC436 /* PitchSmoother.swift */; };
+		29FA8E8EED6F6ECF4B60960F /* SwaraCoachUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9188B16EA4378374EAC57AC9 /* SwaraCoachUITests.swift */; };
+		3A08FB3D06F05CA7249A4161 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A21766D89696BD9B658E3E1 /* Theme.swift */; };
+		3A6E8B28ED843B015FA4194D /* RangeTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA04EBF9ECD53CDB89554CA /* RangeTestViewModel.swift */; };
+		3FAF66C43403972887D782C6 /* PracticeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502E29AD6436D8F4A320472F /* PracticeSession.swift */; };
+		4CF484895DB3BC111FAD380A /* GuideSynth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329C6FBF1ED6A3825168336A /* GuideSynth.swift */; };
+		4F7D75E7A408835D2276D02A /* PitchDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06A206465310CA24156680F /* PitchDetector.swift */; };
+		5749C7E5432AD3840A98C930 /* MelodyLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC4D29E26F49B02D45200C5 /* MelodyLibrary.swift */; };
+		58E06776DD9D1276DB9B81E7 /* TunerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE8A83387B08D4CF0C8323C /* TunerView.swift */; };
+		5B20A6624E57A3D22DB885AB /* RangeTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7684A739CDCBC7198946BB /* RangeTestView.swift */; };
+		607066F409DF1B7109F12596 /* PitchDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53C204ABAC2C897AACEA8A7 /* PitchDetectorTests.swift */; };
+		6323AF59AF2EF8EB8BDF7408 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F00D96B1007B9EB79425B4 /* ResultsView.swift */; };
+		68AF69F9FB4583C82B50338D /* Scoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2D395F6A49DABFBA49A501 /* Scoring.swift */; };
+		6CFC7099F85EDF013287011F /* Melody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373CF93670F41BC5D41431A9 /* Melody.swift */; };
+		7411502A8D4D6E1C0EC7CEC4 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22B5E47173C96F73C5B072A /* RootView.swift */; };
+		7EE2B179F797868942E7458B /* TunerGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878669105005E09E73F13087 /* TunerGaugeView.swift */; };
+		87FFBCEEA524B793733D4C97 /* SingingClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361172BDDF1D2A2E4B8430F3 /* SingingClassifier.swift */; };
+		9C4C4C8AF5F3F72F1111786C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138F75B02C5E5BFC22F6460B /* Note.swift */; };
+		A971DBA9CAF10FB92BEFDFDA /* VoiceRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21C9EE227099526FC83305C /* VoiceRange.swift */; };
+		AF7EF84ECB9371CC37889685 /* SessionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622BE0404628E24DD31307E1 /* SessionDetailView.swift */; };
+		B20D6A9EAB2CE7DAEE658F52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 248DEBFF9FB98A0A6512B7CA /* Assets.xcassets */; };
+		BCE9DD385856B26512DB0FAA /* PitchGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409F413BC511373A2F5AC7E /* PitchGraphView.swift */; };
+		C64E5C493BBA20D0C6C79116 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BF9379FDD4A1F355DA6B41 /* LibraryView.swift */; };
+		D53AB079FDACD9B5D1DFF359 /* SongDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB48BD2F7B87710305621EF8 /* SongDetailView.swift */; };
+		E4077A309950965AF817D129 /* ProgressDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B157D0ADA026F8628D975471 /* ProgressDashboardView.swift */; };
+		EA82058DF84EF4A5F7037239 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDE87D034E60E2F1C5A98E8 /* OnboardingView.swift */; };
+		F2290948958A3CA47327295D /* MusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34D6545ECA8183DCECD1099 /* MusicTests.swift */; };
+		F4B6C0B25D7530D056098D06 /* ScoreRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D878887B602D8D0441361C45 /* ScoreRingView.swift */; };
+		F56F52345333780704C7AA31 /* MicrophoneInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D761566C8A52FA01309C8EE9 /* MicrophoneInput.swift */; };
+		F96A09D8C78DC8B57B09ED31 /* PersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903A4FF2F4C05F02FCC1228C /* PersistenceTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64AC268CB36FEA116804C595 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF0ACBB1F95DCFF382233994 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AFDBE048DE7585996C7288E;
+			remoteInfo = SwaraCoach;
+		};
+		E4C192AAF8C43BAA9888CCE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF0ACBB1F95DCFF382233994 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AFDBE048DE7585996C7288E;
+			remoteInfo = SwaraCoach;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09F00D96B1007B9EB79425B4 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		138F75B02C5E5BFC22F6460B /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		1891249AE44096EF3132FB28 /* SwaraCoachTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SwaraCoachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		248DEBFF9FB98A0A6512B7CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		329C6FBF1ED6A3825168336A /* GuideSynth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideSynth.swift; sourceTree = "<group>"; };
+		361172BDDF1D2A2E4B8430F3 /* SingingClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingingClassifier.swift; sourceTree = "<group>"; };
+		373CF93670F41BC5D41431A9 /* Melody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Melody.swift; sourceTree = "<group>"; };
+		3DDE87D034E60E2F1C5A98E8 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		42E891E3EB24D3F652A50E1F /* SwaraCoachApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwaraCoachApp.swift; sourceTree = "<group>"; };
+		4E2D395F6A49DABFBA49A501 /* Scoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scoring.swift; sourceTree = "<group>"; };
+		502E29AD6436D8F4A320472F /* PracticeSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSession.swift; sourceTree = "<group>"; };
+		5A1805B057590D6CC31E1706 /* AudioInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioInput.swift; sourceTree = "<group>"; };
+		622BE0404628E24DD31307E1 /* SessionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailView.swift; sourceTree = "<group>"; };
+		6AFA7F09A4DE9EE75BFE1B97 /* GlowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowCard.swift; sourceTree = "<group>"; };
+		6FAAE53A633A156CAB9651E4 /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
+		749E2D5AE42386BEFFA0E65C /* SessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewModel.swift; sourceTree = "<group>"; };
+		7A21766D89696BD9B658E3E1 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		840696CB8F380446C62D149D /* TunerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerViewModel.swift; sourceTree = "<group>"; };
+		8409F413BC511373A2F5AC7E /* PitchGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchGraphView.swift; sourceTree = "<group>"; };
+		878669105005E09E73F13087 /* TunerGaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerGaugeView.swift; sourceTree = "<group>"; };
+		8DE8A83387B08D4CF0C8323C /* TunerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerView.swift; sourceTree = "<group>"; };
+		8EA04EBF9ECD53CDB89554CA /* RangeTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeTestViewModel.swift; sourceTree = "<group>"; };
+		903A4FF2F4C05F02FCC1228C /* PersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceTests.swift; sourceTree = "<group>"; };
+		9188B16EA4378374EAC57AC9 /* SwaraCoachUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwaraCoachUITests.swift; sourceTree = "<group>"; };
+		AE7684A739CDCBC7198946BB /* RangeTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeTestView.swift; sourceTree = "<group>"; };
+		B06A206465310CA24156680F /* PitchDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchDetector.swift; sourceTree = "<group>"; };
+		B157D0ADA026F8628D975471 /* ProgressDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDashboardView.swift; sourceTree = "<group>"; };
+		B34D6545ECA8183DCECD1099 /* MusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTests.swift; sourceTree = "<group>"; };
+		B9FF1299C5C5357A6A0840F9 /* SimulatedInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatedInput.swift; sourceTree = "<group>"; };
+		BA0E5F68EBBE14041FA177B2 /* SwaraCoachUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SwaraCoachUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C22B5E47173C96F73C5B072A /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		CB48BD2F7B87710305621EF8 /* SongDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailView.swift; sourceTree = "<group>"; };
+		D1ACAAB617ADE78567515D06 /* SingSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingSessionView.swift; sourceTree = "<group>"; };
+		D21C9EE227099526FC83305C /* VoiceRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRange.swift; sourceTree = "<group>"; };
+		D53C204ABAC2C897AACEA8A7 /* PitchDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchDetectorTests.swift; sourceTree = "<group>"; };
+		D761566C8A52FA01309C8EE9 /* MicrophoneInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneInput.swift; sourceTree = "<group>"; };
+		D878887B602D8D0441361C45 /* ScoreRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRingView.swift; sourceTree = "<group>"; };
+		E1BF9379FDD4A1F355DA6B41 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		EB1D3B028FD8148E87DEC436 /* PitchSmoother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchSmoother.swift; sourceTree = "<group>"; };
+		EE9496176743A25D175621B2 /* SwaraCoach.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SwaraCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDC4D29E26F49B02D45200C5 /* MelodyLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelodyLibrary.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0B842CF69B5BB80F6DE20F7F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				E1BF9379FDD4A1F355DA6B41 /* LibraryView.swift */,
+				CB48BD2F7B87710305621EF8 /* SongDetailView.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		1408D3CC061D8F041228AD92 = {
+			isa = PBXGroup;
+			children = (
+				982C78E37590F82E75A5ACFC /* SwaraCoach */,
+				F5E72360356F830E22C0E336 /* SwaraCoachTests */,
+				909A892ACC5E6ABD6CEAF0E9 /* SwaraCoachUITests */,
+				607D60FD010F494B5FB8DE10 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		31DB1977868E616736A4182F /* Tuner */ = {
+			isa = PBXGroup;
+			children = (
+				8DE8A83387B08D4CF0C8323C /* TunerView.swift */,
+			);
+			path = Tuner;
+			sourceTree = "<group>";
+		};
+		5BEA70FDA633DA73142F3F80 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				09F00D96B1007B9EB79425B4 /* ResultsView.swift */,
+				D1ACAAB617ADE78567515D06 /* SingSessionView.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		607D60FD010F494B5FB8DE10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE9496176743A25D175621B2 /* SwaraCoach.app */,
+				1891249AE44096EF3132FB28 /* SwaraCoachTests.xctest */,
+				BA0E5F68EBBE14041FA177B2 /* SwaraCoachUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AAC2F49F52349EDED1673BF /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				B157D0ADA026F8628D975471 /* ProgressDashboardView.swift */,
+				622BE0404628E24DD31307E1 /* SessionDetailView.swift */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		6F73B7896C3FD19303FC5333 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				5A1805B057590D6CC31E1706 /* AudioInput.swift */,
+				329C6FBF1ED6A3825168336A /* GuideSynth.swift */,
+				D761566C8A52FA01309C8EE9 /* MicrophoneInput.swift */,
+				B9FF1299C5C5357A6A0840F9 /* SimulatedInput.swift */,
+				361172BDDF1D2A2E4B8430F3 /* SingingClassifier.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		7D6B401935F34FEC6115593A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				3DDE87D034E60E2F1C5A98E8 /* OnboardingView.swift */,
+				AE7684A739CDCBC7198946BB /* RangeTestView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		851D4B84E725AB16C88D28E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				502E29AD6436D8F4A320472F /* PracticeSession.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8DED744618AA23A09A16BC82 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				248DEBFF9FB98A0A6512B7CA /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		909A892ACC5E6ABD6CEAF0E9 /* SwaraCoachUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9188B16EA4378374EAC57AC9 /* SwaraCoachUITests.swift */,
+			);
+			path = SwaraCoachUITests;
+			sourceTree = "<group>";
+		};
+		982C78E37590F82E75A5ACFC /* SwaraCoach */ = {
+			isa = PBXGroup;
+			children = (
+				EAA5FF903CEC1FFFD57C2738 /* App */,
+				6F73B7896C3FD19303FC5333 /* Audio */,
+				FFADCCEE44F891547774D0C0 /* Components */,
+				C56B6EF5985C953CFA9EC87E /* Core */,
+				851D4B84E725AB16C88D28E0 /* Models */,
+				8DED744618AA23A09A16BC82 /* Resources */,
+				C38540F3A9C0A44AE8C81BAB /* ViewModels */,
+				B6C2904D3DE374B657B9D022 /* Views */,
+			);
+			path = SwaraCoach;
+			sourceTree = "<group>";
+		};
+		B6C2904D3DE374B657B9D022 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0B842CF69B5BB80F6DE20F7F /* Library */,
+				7D6B401935F34FEC6115593A /* Onboarding */,
+				6AAC2F49F52349EDED1673BF /* Progress */,
+				5BEA70FDA633DA73142F3F80 /* Session */,
+				31DB1977868E616736A4182F /* Tuner */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C38540F3A9C0A44AE8C81BAB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8EA04EBF9ECD53CDB89554CA /* RangeTestViewModel.swift */,
+				749E2D5AE42386BEFFA0E65C /* SessionViewModel.swift */,
+				840696CB8F380446C62D149D /* TunerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C56B6EF5985C953CFA9EC87E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				373CF93670F41BC5D41431A9 /* Melody.swift */,
+				FDC4D29E26F49B02D45200C5 /* MelodyLibrary.swift */,
+				138F75B02C5E5BFC22F6460B /* Note.swift */,
+				B06A206465310CA24156680F /* PitchDetector.swift */,
+				EB1D3B028FD8148E87DEC436 /* PitchSmoother.swift */,
+				4E2D395F6A49DABFBA49A501 /* Scoring.swift */,
+				D21C9EE227099526FC83305C /* VoiceRange.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EAA5FF903CEC1FFFD57C2738 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C22B5E47173C96F73C5B072A /* RootView.swift */,
+				42E891E3EB24D3F652A50E1F /* SwaraCoachApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F5E72360356F830E22C0E336 /* SwaraCoachTests */ = {
+			isa = PBXGroup;
+			children = (
+				B34D6545ECA8183DCECD1099 /* MusicTests.swift */,
+				903A4FF2F4C05F02FCC1228C /* PersistenceTests.swift */,
+				D53C204ABAC2C897AACEA8A7 /* PitchDetectorTests.swift */,
+			);
+			path = SwaraCoachTests;
+			sourceTree = "<group>";
+		};
+		FFADCCEE44F891547774D0C0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6AFA7F09A4DE9EE75BFE1B97 /* GlowCard.swift */,
+				8409F413BC511373A2F5AC7E /* PitchGraphView.swift */,
+				D878887B602D8D0441361C45 /* ScoreRingView.swift */,
+				6FAAE53A633A156CAB9651E4 /* StarRatingView.swift */,
+				7A21766D89696BD9B658E3E1 /* Theme.swift */,
+				878669105005E09E73F13087 /* TunerGaugeView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		574184839337292E4B0A2144 /* SwaraCoachTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28609B80176ECC07CF2D45AE /* Build configuration list for PBXNativeTarget "SwaraCoachTests" */;
+			buildPhases = (
+				EDB0579525B3C07F1778399B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2358D120988966E4A1DFCE0 /* PBXTargetDependency */,
+			);
+			name = SwaraCoachTests;
+			packageProductDependencies = (
+			);
+			productName = SwaraCoachTests;
+			productReference = 1891249AE44096EF3132FB28 /* SwaraCoachTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6AFDBE048DE7585996C7288E /* SwaraCoach */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE4F19B256C559E33186F27D /* Build configuration list for PBXNativeTarget "SwaraCoach" */;
+			buildPhases = (
+				0BD4029B404051B71B85DBCA /* Sources */,
+				D1E0B5FF3564AB0BAABC1DB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwaraCoach;
+			packageProductDependencies = (
+			);
+			productName = SwaraCoach;
+			productReference = EE9496176743A25D175621B2 /* SwaraCoach.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB1A88A7D2DE4BB2E4491409 /* SwaraCoachUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16D4F39B86FA8AD095ED0E07 /* Build configuration list for PBXNativeTarget "SwaraCoachUITests" */;
+			buildPhases = (
+				31A196876BD9B6F20CC7E52F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF1FD27013F7D7C9D7A81AAA /* PBXTargetDependency */,
+			);
+			name = SwaraCoachUITests;
+			packageProductDependencies = (
+			);
+			productName = SwaraCoachUITests;
+			productReference = BA0E5F68EBBE14041FA177B2 /* SwaraCoachUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF0ACBB1F95DCFF382233994 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					6AFDBE048DE7585996C7288E = {
+						ProvisioningStyle = Automatic;
+					};
+					EB1A88A7D2DE4BB2E4491409 = {
+						TestTargetID = 6AFDBE048DE7585996C7288E;
+					};
+				};
+			};
+			buildConfigurationList = CF22487A9651A38078FC3E20 /* Build configuration list for PBXProject "SwaraCoach" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 1408D3CC061D8F041228AD92;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 607D60FD010F494B5FB8DE10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AFDBE048DE7585996C7288E /* SwaraCoach */,
+				574184839337292E4B0A2144 /* SwaraCoachTests */,
+				EB1A88A7D2DE4BB2E4491409 /* SwaraCoachUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1E0B5FF3564AB0BAABC1DB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20D6A9EAB2CE7DAEE658F52 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BD4029B404051B71B85DBCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F65047FC340FEFEABDC4449 /* AudioInput.swift in Sources */,
+				1F605249976BCE0E3B3106E3 /* GlowCard.swift in Sources */,
+				4CF484895DB3BC111FAD380A /* GuideSynth.swift in Sources */,
+				C64E5C493BBA20D0C6C79116 /* LibraryView.swift in Sources */,
+				6CFC7099F85EDF013287011F /* Melody.swift in Sources */,
+				5749C7E5432AD3840A98C930 /* MelodyLibrary.swift in Sources */,
+				F56F52345333780704C7AA31 /* MicrophoneInput.swift in Sources */,
+				9C4C4C8AF5F3F72F1111786C /* Note.swift in Sources */,
+				EA82058DF84EF4A5F7037239 /* OnboardingView.swift in Sources */,
+				4F7D75E7A408835D2276D02A /* PitchDetector.swift in Sources */,
+				BCE9DD385856B26512DB0FAA /* PitchGraphView.swift in Sources */,
+				263286EFBCD5C9A1A4A3DE7D /* PitchSmoother.swift in Sources */,
+				3FAF66C43403972887D782C6 /* PracticeSession.swift in Sources */,
+				E4077A309950965AF817D129 /* ProgressDashboardView.swift in Sources */,
+				5B20A6624E57A3D22DB885AB /* RangeTestView.swift in Sources */,
+				3A6E8B28ED843B015FA4194D /* RangeTestViewModel.swift in Sources */,
+				6323AF59AF2EF8EB8BDF7408 /* ResultsView.swift in Sources */,
+				7411502A8D4D6E1C0EC7CEC4 /* RootView.swift in Sources */,
+				F4B6C0B25D7530D056098D06 /* ScoreRingView.swift in Sources */,
+				68AF69F9FB4583C82B50338D /* Scoring.swift in Sources */,
+				AF7EF84ECB9371CC37889685 /* SessionDetailView.swift in Sources */,
+				221252D40A629AC590B8AA7D /* SessionViewModel.swift in Sources */,
+				07317174B9672EA56A41094A /* SimulatedInput.swift in Sources */,
+				03652514B8F4BAB8D6CCEF29 /* SingSessionView.swift in Sources */,
+				87FFBCEEA524B793733D4C97 /* SingingClassifier.swift in Sources */,
+				D53AB079FDACD9B5D1DFF359 /* SongDetailView.swift in Sources */,
+				141140AD6D49EFA3054A6E8F /* StarRatingView.swift in Sources */,
+				202AB27C4DA9AC008375D220 /* SwaraCoachApp.swift in Sources */,
+				3A08FB3D06F05CA7249A4161 /* Theme.swift in Sources */,
+				7EE2B179F797868942E7458B /* TunerGaugeView.swift in Sources */,
+				58E06776DD9D1276DB9B81E7 /* TunerView.swift in Sources */,
+				0BF993136EE8366210C9F542 /* TunerViewModel.swift in Sources */,
+				A971DBA9CAF10FB92BEFDFDA /* VoiceRange.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31A196876BD9B6F20CC7E52F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29FA8E8EED6F6ECF4B60960F /* SwaraCoachUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB0579525B3C07F1778399B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2290948958A3CA47327295D /* MusicTests.swift in Sources */,
+				F96A09D8C78DC8B57B09ED31 /* PersistenceTests.swift in Sources */,
+				607066F409DF1B7109F12596 /* PitchDetectorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2358D120988966E4A1DFCE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AFDBE048DE7585996C7288E /* SwaraCoach */;
+			targetProxy = 64AC268CB36FEA116804C595 /* PBXContainerItemProxy */;
+		};
+		DF1FD27013F7D7C9D7A81AAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AFDBE048DE7585996C7288E /* SwaraCoach */;
+			targetProxy = E4C192AAF8C43BAA9888CCE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		101646DF114837534A3C8B7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lk.swaracoach.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwaraCoach.app/SwaraCoach";
+			};
+			name = Debug;
+		};
+		1BC1EBC176B237E2F4F0D8D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_KEY_CFBundleDisplayName = SwaraCoach;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SwaraCoach listens to your voice to show your pitch. Audio stays on your device.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lk.swaracoach.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		31D3286A4141837CB168A0BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lk.swaracoach.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwaraCoach;
+			};
+			name = Debug;
+		};
+		57A3838CA4FF164B8EBDC9C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lk.swaracoach.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwaraCoach;
+			};
+			name = Release;
+		};
+		8911CAA9CC2A4FEFDA3FF9FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lk.swaracoach.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwaraCoach.app/SwaraCoach";
+			};
+			name = Release;
+		};
+		917DFF2D36702A45125AB353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_KEY_CFBundleDisplayName = SwaraCoach;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SwaraCoach listens to your voice to show your pitch. Audio stays on your device.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lk.swaracoach.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AE8CFF053A6AFDDCA5B841C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C3F9CEDCE69E1765F91B9DBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16D4F39B86FA8AD095ED0E07 /* Build configuration list for PBXNativeTarget "SwaraCoachUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31D3286A4141837CB168A0BF /* Debug */,
+				57A3838CA4FF164B8EBDC9C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		28609B80176ECC07CF2D45AE /* Build configuration list for PBXNativeTarget "SwaraCoachTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				101646DF114837534A3C8B7C /* Debug */,
+				8911CAA9CC2A4FEFDA3FF9FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CF22487A9651A38078FC3E20 /* Build configuration list for PBXProject "SwaraCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE8CFF053A6AFDDCA5B841C3 /* Debug */,
+				C3F9CEDCE69E1765F91B9DBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EE4F19B256C559E33186F27D /* Build configuration list for PBXNativeTarget "SwaraCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BC1EBC176B237E2F4F0D8D0 /* Debug */,
+				917DFF2D36702A45125AB353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF0ACBB1F95DCFF382233994 /* Project object */;
+}
