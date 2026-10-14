@@ -72,3 +72,13 @@ Unit tests (XCTest, `SwaraCoachTests/`): pitch detection on synthetic tones, smo
 - Classifier latency is about 1 second, so the first moments of a note may be gated.
 - Guide tone through a speaker leaks into the microphone → headphones recommended.
 - Not implemented (time): transposing songs to the user's range, listen-back recording, networking song packs, Sinhala localisation, duet mode, MIDI import.
+
+## Importing your own song
+
+`My Songs` (Sing tab) lets the user pick an audio file and practise its melody.
+
+- `AudioFileAnalyzer` decodes up to the first 90 s with `AVAudioFile`, mixes to mono and lowers the sample rate to about 22 kHz.
+- `MelodyExtractor` runs the same YIN `PitchDetector` over 2048-sample frames (hop 512), smooths with `PitchSmoother`, groups frames of similar pitch into notes (within 0.75 semitone of the running average, dropouts up to 80 ms tolerated), drops notes under 120 ms and joins same-pitch notes split by a short gap.
+- `ImportedSong` (SwiftData) stores only the notes as JSON, never the audio. One beat is one second (60 bpm), so the notes keep their real timing. It exposes a normal `Melody`, so guide tones, the pitch graph, scoring and history work unchanged.
+- Limit: YIN follows one pitch at a time, so a full band recording gives a messy melody. A solo voice, humming or a single instrument works best. The UI says this.
+- Tests: `MelodyExtractorTests` (synthetic sine notes, silence, short blips, dropouts, difficulty, SwiftData round trip). Not yet tried on real songs.

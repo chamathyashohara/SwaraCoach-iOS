@@ -45,7 +45,7 @@ final class VoiceProfile {
 
 enum Persistence {
     static func makeContainer(inMemory: Bool) throws -> ModelContainer {
-        let schema = Schema([PracticeSession.self, VoiceProfile.self])
+        let schema = Schema([PracticeSession.self, VoiceProfile.self, ImportedSong.self])
         let configuration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: inMemory)
         return try ModelContainer(for: schema, configurations: [configuration])
     }

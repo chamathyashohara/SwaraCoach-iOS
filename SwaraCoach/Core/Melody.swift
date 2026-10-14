@@ -10,7 +10,7 @@ struct MelodyNote: Hashable {
 
 /// A song or exercise that the user sings along with.
 struct Melody: Identifiable, Hashable {
-    enum Kind: String { case song = "Song", exercise = "Exercise" }
+    enum Kind: String { case song = "Song", exercise = "Exercise", imported = "My Song" }
     enum Difficulty: String, CaseIterable { case easy = "Easy", medium = "Medium", hard = "Hard" }
 
     let id: String
