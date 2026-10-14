@@ -11,6 +11,7 @@
 		07317174B9672EA56A41094A /* SimulatedInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FF1299C5C5357A6A0840F9 /* SimulatedInput.swift */; };
 		0BF993136EE8366210C9F542 /* TunerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840696CB8F380446C62D149D /* TunerViewModel.swift */; };
 		0F65047FC340FEFEABDC4449 /* AudioInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1805B057590D6CC31E1706 /* AudioInput.swift */; };
+		12F84DDD818267980C2DE90B /* AudioFileAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809107C2C0B40D4133CD627 /* AudioFileAnalyzer.swift */; };
 		141140AD6D49EFA3054A6E8F /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAAE53A633A156CAB9651E4 /* StarRatingView.swift */; };
 		1F605249976BCE0E3B3106E3 /* GlowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFA7F09A4DE9EE75BFE1B97 /* GlowCard.swift */; };
 		202AB27C4DA9AC008375D220 /* SwaraCoachApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E891E3EB24D3F652A50E1F /* SwaraCoachApp.swift */; };
@@ -20,6 +21,7 @@
 		3A08FB3D06F05CA7249A4161 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A21766D89696BD9B658E3E1 /* Theme.swift */; };
 		3A6E8B28ED843B015FA4194D /* RangeTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA04EBF9ECD53CDB89554CA /* RangeTestViewModel.swift */; };
 		3FAF66C43403972887D782C6 /* PracticeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502E29AD6436D8F4A320472F /* PracticeSession.swift */; };
+		41AD67B7B457531A64CD52CE /* ImportedSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93BFDCF0C7327B9F46D9199 /* ImportedSong.swift */; };
 		4CF484895DB3BC111FAD380A /* GuideSynth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329C6FBF1ED6A3825168336A /* GuideSynth.swift */; };
 		4F7D75E7A408835D2276D02A /* PitchDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06A206465310CA24156680F /* PitchDetector.swift */; };
 		5749C7E5432AD3840A98C930 /* MelodyLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC4D29E26F49B02D45200C5 /* MelodyLibrary.swift */; };
@@ -37,10 +39,12 @@
 		AF7EF84ECB9371CC37889685 /* SessionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622BE0404628E24DD31307E1 /* SessionDetailView.swift */; };
 		B20D6A9EAB2CE7DAEE658F52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 248DEBFF9FB98A0A6512B7CA /* Assets.xcassets */; };
 		BCE9DD385856B26512DB0FAA /* PitchGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409F413BC511373A2F5AC7E /* PitchGraphView.swift */; };
+		BE02BB89A74C8B5E52E954F7 /* MelodyExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE205D77AE0DF5466DBD5AB3 /* MelodyExtractor.swift */; };
 		C64E5C493BBA20D0C6C79116 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BF9379FDD4A1F355DA6B41 /* LibraryView.swift */; };
 		D53AB079FDACD9B5D1DFF359 /* SongDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB48BD2F7B87710305621EF8 /* SongDetailView.swift */; };
 		E4077A309950965AF817D129 /* ProgressDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B157D0ADA026F8628D975471 /* ProgressDashboardView.swift */; };
 		EA82058DF84EF4A5F7037239 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDE87D034E60E2F1C5A98E8 /* OnboardingView.swift */; };
+		EB054904C9F590F9F9FF5EE0 /* MelodyExtractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2624A74CF20CE0E85B4DF5 /* MelodyExtractorTests.swift */; };
 		F2290948958A3CA47327295D /* MusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34D6545ECA8183DCECD1099 /* MusicTests.swift */; };
 		F4B6C0B25D7530D056098D06 /* ScoreRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D878887B602D8D0441361C45 /* ScoreRingView.swift */; };
 		F56F52345333780704C7AA31 /* MicrophoneInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D761566C8A52FA01309C8EE9 /* MicrophoneInput.swift */; };
@@ -89,6 +93,7 @@
 		8EA04EBF9ECD53CDB89554CA /* RangeTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeTestViewModel.swift; sourceTree = "<group>"; };
 		903A4FF2F4C05F02FCC1228C /* PersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceTests.swift; sourceTree = "<group>"; };
 		9188B16EA4378374EAC57AC9 /* SwaraCoachUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwaraCoachUITests.swift; sourceTree = "<group>"; };
+		9809107C2C0B40D4133CD627 /* AudioFileAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFileAnalyzer.swift; sourceTree = "<group>"; };
 		AE7684A739CDCBC7198946BB /* RangeTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeTestView.swift; sourceTree = "<group>"; };
 		B06A206465310CA24156680F /* PitchDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchDetector.swift; sourceTree = "<group>"; };
 		B157D0ADA026F8628D975471 /* ProgressDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDashboardView.swift; sourceTree = "<group>"; };
@@ -96,6 +101,7 @@
 		B9FF1299C5C5357A6A0840F9 /* SimulatedInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatedInput.swift; sourceTree = "<group>"; };
 		BA0E5F68EBBE14041FA177B2 /* SwaraCoachUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SwaraCoachUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C22B5E47173C96F73C5B072A /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		C93BFDCF0C7327B9F46D9199 /* ImportedSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportedSong.swift; sourceTree = "<group>"; };
 		CB48BD2F7B87710305621EF8 /* SongDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailView.swift; sourceTree = "<group>"; };
 		D1ACAAB617ADE78567515D06 /* SingSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingSessionView.swift; sourceTree = "<group>"; };
 		D21C9EE227099526FC83305C /* VoiceRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRange.swift; sourceTree = "<group>"; };
@@ -104,7 +110,9 @@
 		D878887B602D8D0441361C45 /* ScoreRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRingView.swift; sourceTree = "<group>"; };
 		E1BF9379FDD4A1F355DA6B41 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		EB1D3B028FD8148E87DEC436 /* PitchSmoother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchSmoother.swift; sourceTree = "<group>"; };
+		EE205D77AE0DF5466DBD5AB3 /* MelodyExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelodyExtractor.swift; sourceTree = "<group>"; };
 		EE9496176743A25D175621B2 /* SwaraCoach.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SwaraCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF2624A74CF20CE0E85B4DF5 /* MelodyExtractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelodyExtractorTests.swift; sourceTree = "<group>"; };
 		FDC4D29E26F49B02D45200C5 /* MelodyLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelodyLibrary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,6 +175,7 @@
 		6F73B7896C3FD19303FC5333 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				9809107C2C0B40D4133CD627 /* AudioFileAnalyzer.swift */,
 				5A1805B057590D6CC31E1706 /* AudioInput.swift */,
 				329C6FBF1ED6A3825168336A /* GuideSynth.swift */,
 				D761566C8A52FA01309C8EE9 /* MicrophoneInput.swift */,
@@ -188,6 +197,7 @@
 		851D4B84E725AB16C88D28E0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C93BFDCF0C7327B9F46D9199 /* ImportedSong.swift */,
 				502E29AD6436D8F4A320472F /* PracticeSession.swift */,
 			);
 			path = Models;
@@ -250,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				373CF93670F41BC5D41431A9 /* Melody.swift */,
+				EE205D77AE0DF5466DBD5AB3 /* MelodyExtractor.swift */,
 				FDC4D29E26F49B02D45200C5 /* MelodyLibrary.swift */,
 				138F75B02C5E5BFC22F6460B /* Note.swift */,
 				B06A206465310CA24156680F /* PitchDetector.swift */,
@@ -272,6 +283,7 @@
 		F5E72360356F830E22C0E336 /* SwaraCoachTests */ = {
 			isa = PBXGroup;
 			children = (
+				EF2624A74CF20CE0E85B4DF5 /* MelodyExtractorTests.swift */,
 				B34D6545ECA8183DCECD1099 /* MusicTests.swift */,
 				903A4FF2F4C05F02FCC1228C /* PersistenceTests.swift */,
 				D53C204ABAC2C897AACEA8A7 /* PitchDetectorTests.swift */,
@@ -403,11 +415,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F84DDD818267980C2DE90B /* AudioFileAnalyzer.swift in Sources */,
 				0F65047FC340FEFEABDC4449 /* AudioInput.swift in Sources */,
 				1F605249976BCE0E3B3106E3 /* GlowCard.swift in Sources */,
 				4CF484895DB3BC111FAD380A /* GuideSynth.swift in Sources */,
+				41AD67B7B457531A64CD52CE /* ImportedSong.swift in Sources */,
 				C64E5C493BBA20D0C6C79116 /* LibraryView.swift in Sources */,
 				6CFC7099F85EDF013287011F /* Melody.swift in Sources */,
+				BE02BB89A74C8B5E52E954F7 /* MelodyExtractor.swift in Sources */,
 				5749C7E5432AD3840A98C930 /* MelodyLibrary.swift in Sources */,
 				F56F52345333780704C7AA31 /* MicrophoneInput.swift in Sources */,
 				9C4C4C8AF5F3F72F1111786C /* Note.swift in Sources */,
@@ -451,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB054904C9F590F9F9FF5EE0 /* MelodyExtractorTests.swift in Sources */,
 				F2290948958A3CA47327295D /* MusicTests.swift in Sources */,
 				F96A09D8C78DC8B57B09ED31 /* PersistenceTests.swift in Sources */,
 				607066F409DF1B7109F12596 /* PitchDetectorTests.swift in Sources */,
