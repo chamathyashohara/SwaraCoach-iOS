@@ -33,8 +33,19 @@ jobs:
           set -o pipefail
           DEST=$(xcrun simctl list devices available | grep -m1 -o 'iPhone [^(]*' | sed 's/ *$//' || true)
           echo "Using simulator: $DEST"
-          xcodebuild test -project SwaraCoach.xcodeproj -scheme SwaraCoach \
+          xcodebuild test -project SwaraCoach.xcodeproj -scheme SwaraCoach -resultBundlePath TestResults.xcresult \
             -destination "platform=iOS Simulator,name=${DEST:-iPhone 16}" CODE_SIGNING_ALLOWED=NO | tail -n 80
+      - name: Export UI screenshots
+        if: always()
+        run: |
+          mkdir -p screenshots
+          xcrun xcresulttool export attachments --path TestResults.xcresult --output-path screenshots || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ui-screenshots
+          path: screenshots
+          if-no-files-found: warn
       - uses: actions/upload-artifact@v4
         if: always()
         with:
